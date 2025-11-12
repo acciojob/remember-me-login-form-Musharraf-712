@@ -10,7 +10,7 @@ window.addEventListener('load',()=>{
 	const savedPass = localStorage.getItem('password')
 
 	if(savedUser && savedPass){
-		existingBtn.style.display = 'bock'
+		existingBtn.style.display = 'block'
 	}else{
 		existingBtn.style.display = 'none'
 	}
@@ -40,6 +40,7 @@ form.addEventListener('submit', (e) => {
 })
 
 existingBtn.addEventListener(`click`,() => {
+	const savedUser = localStorage.getItem('username')
 	if(savedUser) {
 		alert(`Logged in as ${savedUser}`);
 	}
