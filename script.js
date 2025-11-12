@@ -1,16 +1,16 @@
 //your JS code here. If required.
 const usernameInput = document.querySelector('#username');
 const passwordInput = document.querySelector('#password');
-const checkbox = document.querySelector('#chebox')
+const checkbox = document.querySelector('#checkbox')
 const existingBtn = document.querySelector('#existing')
-const form = document.querySelector('#loginId')
+const form = document.querySelector('#loginForm')
 
 window.addEventListener('load',()=>{
-	const savedUser = localStorage.getItem('uername');
-	const savedPass = localStorage.gerItem('password')
+	const savedUser = localStorage.getItem('username');
+	const savedPass = localStorage.getItem('password')
 
 	if(savedUser && savedPass){
-		existingBtn.style.display = 'bloock'
+		existingBtn.style.display = 'bock'
 	}else{
 		existingBtn.style.display = 'none'
 	}
